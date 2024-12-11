@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(81, 123, 81);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  font-size: 20vh;
+  font-weight: 700;
+  margin: auto;
+  position: relative;
+  background-color: blue;
+}
+.number,
+.text {
+  opacity: 0;
+  animation: countDown 1s ease-in-out forwards;
+  position: absolute;
+  top: 30vh;
+  left: 45%;
+}
+.text {
+  left: 30%;
+}
+.ten {
+  opacity: 1;
+}
+.nine {
+  animation-delay: 1s;
+}
+.eight {
+  animation-delay: 2s;
+}
+.seven {
+  animation-delay: 3s;
+}
+.six {
+  animation-delay: 4s;
+}
+.five {
+  animation-delay: 5s;
+}
+.four {
+  animation-delay: 6s;
+}
+.three {
+  animation-delay: 7s;
+}
+.two {
+  animation-delay: 8s;
+}
+.one {
+  animation-delay: 9s;
+}
+.text {
+  animation-delay: 10s;
+}
+
+@keyframes countDown {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
